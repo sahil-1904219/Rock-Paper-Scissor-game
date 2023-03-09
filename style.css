@@ -65,3 +65,122 @@ letter-spacing: 0.1em;
 
 color: #FFFFFF;
 }
+#rectangle2{
+    position: absolute;
+width: 139px;
+height: 128px;
+left: 713px;
+top: 77px;
+
+background: #FFFFFF;
+border-radius: 9px;
+}
+#rectangle3{
+    position: absolute;
+    width: 139px;
+    height: 128px;
+    left: 881px;
+    top: 77px;
+    
+    background: #FFFFFF;
+    border-radius: 9px;
+}
+#computer{
+    position: absolute;
+    width: 103px;
+    height: 20px;
+    left: 730px;
+    top: 84px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    /* identical to box height */
+    
+    letter-spacing: 0.1em;
+    
+    color: #656565;
+}
+  #CSCORE{
+    position: absolute;
+    width: 61px;
+    height: 16px;
+    left: 752px;
+    top: 106px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    
+    color: #656565;
+  }
+.cscore{
+    position: absolute;
+    width: 79px;
+    height: 63px;
+    left: 742px;
+    top: 128px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 68px;
+    line-height: 80px;
+    text-align: center;
+    
+    color: #252525;
+}
+
+#YOUR{
+    position: absolute;
+    width: 50px;
+    height: 16px;
+    left: 926px;
+    top: 84px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 17px;
+    line-height: 20px;
+    letter-spacing: 0.1em;
+    
+    color: #656565;
+}
+    #YSCORE{
+        position: absolute;
+width: 61px;
+height: 16px;
+left: 920px;
+top: 106px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 700;
+font-size: 17px;
+line-height: 20px;
+letter-spacing: 0.1em;
+
+color: #656565;
+    }
+    .yscore{
+        position: absolute;
+        width: 79px;
+        height: 63px;
+        left: 910px;
+        top: 128px;
+        
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 68px;
+        line-height: 80px;
+        text-align: center;
+        
+        color: #252525;
+    }
