@@ -1,0 +1,67 @@
+body{
+    background: rgba(137, 193, 94, 1);
+    margin: 0px;
+    padding: 0px;
+    position: relative;
+width: 100%px;
+height: 100vh;
+}
+.rectangle1{
+    position: absolute;
+    width: 800px;
+    height: 158px;
+    left: 240px;
+    top: 62px;
+    
+    border: 2px solid #FFFFFF;
+    border-radius: 13px;
+}
+#ROCK{
+    position: absolute;
+width: 135px;
+height: 37px;
+left: 258px;
+top: 78px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
+#PAPER{
+    position: absolute;
+    width: 150px;
+    height: 37px;
+    left: 258px;
+    top: 120px;
+    
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 40px;
+    line-height: 47px;
+    letter-spacing: 0.1em;
+    
+    color: #FFFFFF;
+}
+
+#SCISSOR{
+    position: absolute;
+width: 235px;
+height: 37px;
+left: 259px;
+top: 163px;
+
+font-family: 'Roboto';
+font-style: normal;
+font-weight: 600;
+font-size: 40px;
+line-height: 47px;
+letter-spacing: 0.1em;
+
+color: #FFFFFF;
+}
