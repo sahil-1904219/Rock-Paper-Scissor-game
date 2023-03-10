@@ -405,7 +405,10 @@ div.fadeIn {
   opacity: 1;
   pointer-events: all;
 }
-
+.match {
+  opacity: 0;
+  pointer-events: none;
+}
 #ypicked {
   position: absolute;
   width: 113px;
@@ -458,6 +461,18 @@ div.fadeIn {
   top: 69%;
 
   /* background: url(icons8-fist-67.png); */
+}
+.ywinner {
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  /* left: 218px; */
+  left: 19.4%;
+  /* top: 310px; */
+  top: 49%;
+  border-radius: 50%;
+  background: rgba(46, 154, 37, 0.39);
+  box-shadow: 0px 1px 62px rgba(0, 0, 0, 0.13);
 }
 .decisionText {
   position: absolute;
@@ -579,4 +594,17 @@ div.fadeIn {
   top: 69%;
 
   /* background: url(icons8-fist-67.png); */
+}
+.pwinner {
+  position: absolute;
+  width: 310px;
+  height: 310px;
+  /* left: 745px; */
+  left: 60.5%;
+  /* top: 310px; */
+  top: 49%;
+  border-radius: 50%;
+
+  background: rgba(46, 154, 37, 0.39);
+  box-shadow: 10px 11px 162px rgba(0, 0, 0, 0.13);
 }
