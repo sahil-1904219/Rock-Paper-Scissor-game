@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <link rel="stylesheet" href="style.css" />
     <title>Document</title>
   </head>
@@ -33,19 +34,22 @@
         <span id="line3"></span>
       </div>
       <div class="options">
-        <div class="stoneButton">
+        <div class="stoneButton" id="rock">
+          <!-- stone -->
           <span id="outerrock1"></span>
           <span id="outerrock2"></span>
           <img id="rockimg" src="assets/rock.png" alt="STONE" />
         </div>
 
-        <div class="scissorButton">
+        <div class="scissorButton" id="scissor">
+          <!-- scissor -->
           <span id="outerscissor1"></span>
           <span id="outerscissor2"></span>
           <img id="scissorimg" src="assets/scissor.png" alt="SCISSOR" />
         </div>
 
-        <div class="paperButton">
+        <div class="paperButton" id="paper">
+          <!-- paper -->
           <span id="outerpaper1"></span>
           <span id="outerpaper2"></span>
           <img id="paperimg" src="assets/paper.png" alt="PAPER" />
@@ -63,8 +67,10 @@
       <div class="middlePart">
         <label class="decisionText">YOU LOST</label>
         <label class="against">AGAINST PC</label>
-        <span class="playButton"></span>
-        <span class="playText">PLAY AGAIN</span>
+        <div class="playbutton">
+          <span class="playButton"></span>
+          <span class="playText">PLAY AGAIN</span>
+        </div>
       </div>
       <div class="rightPart">
         <label id="ppicked">PC PICKED</label>

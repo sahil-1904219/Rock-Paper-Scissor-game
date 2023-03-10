@@ -396,18 +396,36 @@ body {
   color: #ffffff;
 }
 
-div.fadeOut {
+/* div.fadeOut {
   opacity: 0;
-  pointer-events: none;
-}
+  /* pointer-events: auto; */
+/* } */
 
-div.fadeIn {
-  opacity: 1;
-  pointer-events: all;
+/* div.fadeIn {
+  opacity: 1; 
+   pointer-events: auto; 
+ }  */
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
 }
 .match {
   opacity: 0;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 #ypicked {
   position: absolute;
