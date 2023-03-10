@@ -26,26 +26,53 @@
     <label id="YOUR">YOUR</label>
     <label id="YSCORE">SCORE</label>
     <label class="yscore">0</label>
+    <div class="choose-option">
+      <div class="lines">
+        <span id="line1"></span>
+        <span id="line2"></span>
+        <span id="line3"></span>
+      </div>
+      <div class="stoneButton">
+        <span id="outerrock1"></span>
+        <span id="outerrock2"></span>
+        <img id="rockimg" src="New folder/rock.png" alt="STONE" />
+      </div>
 
-    <span id="outerrock1"></span>
-    <span id="outerpaper1"></span>
-    <span id="outerscissor1"></span>
-    <span id="outerrock2"></span>
-    <span id="outerpaper2"></span>
-    <span id="outerscissor2"></span>
-    <!-- <span id="handimg"></span> -->
-    <!-- <span id="outerpaper2"></span>
-    <span id="outerscissor2"></span> -->
-    <img id="rockimg" src="New folder/rock.png" alt="STONE" />
-    <img id="paperimg" src="New folder/paper.png" alt="PAPER" />
-    <img id="scissorimg" src="New folder/scissor.png" alt="SCISSOR" />
+      <div class="scissorButton">
+        <span id="outerscissor1"></span>
+        <span id="outerscissor2"></span>
+        <img id="scissorimg" src="New folder/scissor.png" alt="SCISSOR" />
+      </div>
 
-    <span id="line1"></span>
-    <span id="line2"></span>
-    <span id="line3"></span>
+      <div class="paperButton">
+        <span id="outerpaper1"></span>
+        <span id="outerpaper2"></span>
+        <img id="paperimg" src="New folder/paper.png" alt="PAPER" />
+      </div>
+    </div>
 
+    <div class="match">
+      <div class="rightSide">
+        <label id="ypicked">YOU PICKED</label>
+        <span class="outerCircle1"></span>
+        <span class="innerCircle1"></span>
+        <img class="yourImage" src="New folder/paper.png" alt="image" />
+      </div>
+      <div class="middlePart">
+        <label class="decisionText">YOU LOST</label>
+        <label class="against">AGAINST PC</label>
+        <span class="playButton"></span>
+        <span class="playText">PLAY AGAIN</span>
+      </div>
+      <div class="rightPart">
+        <label id="ppicked">PC PICKED</label>
+        <span class="outerCircle2"></span>
+        <span class="innerCircle2"></span>
+        <img class="pcImage" src="New folder/paper.png" alt="image" />
+      </div>
+    </div>
     <span id="rule-button"></span>
     <span id="rule-text">RULES</span>
+    <script src="main.js"></script>
   </body>
-  <script src="main.js"></script>
 </html>
