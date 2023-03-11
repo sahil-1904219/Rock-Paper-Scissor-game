@@ -9,79 +9,120 @@
     <title>Document</title>
   </head>
   <body>
-    <div class="rectangle1"></div>
-    <label id="ROCK">ROCK</label>
-    <label id="PAPER">PAPER</label>
-    <label id="SCISSOR">SCISSOR</label>
+    <div class="fullbody">
+      <div class="rectangle1"></div>
+      <label id="ROCK">ROCK</label>
+      <label id="PAPERR">PAPER</label>
+      <label id="SCISSOR">SCISSOR</label>
 
-    <!-- COMPUTER SCORE CARD -->
+      <!-- COMPUTER SCORE CARD -->
 
-    <div id="rectangle2"></div>
-    <label id="computer">COMPUTER</label>
-    <label id="CSCORE">SCORE</label>
-    <label class="cscore">0</label>
+      <div id="rectangle2"></div>
+      <label id="computer">COMPUTER</label>
+      <label id="CSCORE">SCORE</label>
+      <label class="cscore">0</label>
 
-    <!-- YOUR SCORE CARD -->
+      <!-- YOUR SCORE CARD -->
 
-    <div id="rectangle3"></div>
-    <label id="YOUR">YOUR</label>
-    <label id="YSCORE">SCORE</label>
-    <label class="yscore">0</label>
-    <div class="choose-option">
-      <div class="lines">
-        <span id="line1"></span>
-        <span id="line2"></span>
-        <span id="line3"></span>
+      <div id="rectangle3"></div>
+      <label id="YOUR">YOUR</label>
+      <label id="YSCORE">SCORE</label>
+      <span class="yscore">0</span>
+      <div class="choose-option">
+        <div class="lines">
+          <span id="line1"></span>
+          <span id="line2"></span>
+          <span id="line3"></span>
+        </div>
+        <div class="options">
+          <div class="stoneButton" id="rock">
+            <!-- stone -->
+            <span id="outerrock1"></span>
+            <span id="outerrock2"></span>
+            <img id="rockimg" src="assets/rock.png" alt="STONE" />
+          </div>
+
+          <div class="scissorButton" id="scissor">
+            <!-- scissor -->
+            <span id="outerscissor1"></span>
+            <span id="outerscissor2"></span>
+            <img id="scissorimg" src="assets/scissor.png" alt="SCISSOR" />
+          </div>
+
+          <div class="paperButton" id="paper">
+            <span id="outerpaper1"></span>
+            <span id="outerpaper2"></span>
+            <img id="paperimg" src="assets/paper.png" alt="PAPER" />
+          </div>
+        </div>
       </div>
-      <div class="options">
-        <div class="stoneButton" id="rock">
-          <!-- stone -->
-          <span id="outerrock1"></span>
-          <span id="outerrock2"></span>
-          <img id="rockimg" src="assets/rock.png" alt="STONE" />
+      <div class="ss">
+        <div class="match">
+          <div class="leftSide">
+            <label id="ypicked">YOU PICKED</label>
+            <span class="ywinner"></span>
+            <span class="outerCircle1"></span>
+            <span class="innerCircle1"></span>
+            <img class="yourImage" src="" alt="image" />
+          </div>
+          <div class="middlePart">
+            <label class="decisionText">YOU LOST</label>
+            <label class="against">AGAINST PC</label>
+            <div class="playbutton">
+              <span class="playButton"></span>
+              <span class="playText">PLAY AGAIN</span>
+            </div>
+          </div>
+          <div class="rightPart">
+            <label id="ppicked">PC PICKED</label>
+            <span class="pwinner"></span>
+            <span class="outerCircle2"></span>
+            <span class="innerCircle2"></span>
+            <img class="pcImage" src="" alt="image" />
+          </div>
         </div>
-
-        <div class="scissorButton" id="scissor">
-          <!-- scissor -->
-          <span id="outerscissor1"></span>
-          <span id="outerscissor2"></span>
-          <img id="scissorimg" src="assets/scissor.png" alt="SCISSOR" />
+      </div>
+      <div class="rule">
+        <span id="rule-button"></span>
+        <span id="rule-text">RULES</span>
+      </div>
+      <div class="next">
+        <span id="nextButton"></span>
+        <span id="nextText">RULES</span>
+      </div>
+      <div class="wholeRule">
+        <div class="ruleBox">
+          <div class="rbox">
+            <p class="rheading">Game Rules</p>
+            <ul>
+              <li class="square-bullet">
+                Rock beats scissors, scissors beat paper, and paper beats rock.
+              </li>
+              <br />
+              <li class="square-bullet">
+                Agree ahead of time whether you’ll count off “rock, paper,
+                scissors, shoot” or just “rock, paper, scissors.
+              </li>
+              <br />
+              <li class="square-bullet">
+                Use rock, paper, scissors to settle minor decisions or simply
+                play to pass the time
+              </li>
+              <br />
+              <li class="square-bullet">
+                If both players lay down the same hand, each player lays down
+                another hand
+              </li>
+              <br />
+            </ul>
+          </div>
         </div>
-
-        <div class="paperButton" id="paper">
-          <!-- paper -->
-          <span id="outerpaper1"></span>
-          <span id="outerpaper2"></span>
-          <img id="paperimg" src="assets/paper.png" alt="PAPER" />
+        <div class="Cut">
+          <span class="cut"></span>
+          <span class="cutText">x</span>
         </div>
       </div>
     </div>
-    <div class="match">
-      <div class="leftSide">
-        <label id="ypicked">YOU PICKED</label>
-        <span class="ywinner"></span>
-        <span class="outerCircle1"></span>
-        <span class="innerCircle1"></span>
-        <img class="yourImage" src="assets/paper.png" alt="image" />
-      </div>
-      <div class="middlePart">
-        <label class="decisionText">YOU LOST</label>
-        <label class="against">AGAINST PC</label>
-        <div class="playbutton">
-          <span class="playButton"></span>
-          <span class="playText">PLAY AGAIN</span>
-        </div>
-      </div>
-      <div class="rightPart">
-        <label id="ppicked">PC PICKED</label>
-        <span class="pwinner"></span>
-        <span class="outerCircle2"></span>
-        <span class="innerCircle2"></span>
-        <img class="pcImage" src="assets/paper.png" alt="image" />
-      </div>
-    </div>
-    <span id="rule-button"></span>
-    <span id="rule-text">RULES</span>
     <script src="main.js"></script>
   </body>
 </html>

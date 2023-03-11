@@ -38,7 +38,7 @@ body {
 
   color: #ffffff;
 }
-#PAPER {
+#PAPERR {
   position: absolute;
   width: 150px;
   height: 37px;
@@ -218,6 +218,7 @@ body {
   left: 36.04%;
   /* top: 313px; */
   top: 39.9%;
+  cursor: pointer;
 
   border: 16px solid #0074b6;
   filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
@@ -232,7 +233,7 @@ body {
   left: 54.5%;
   /* top: 313px; */
   top: 39.9%;
-
+  cursor: pointer;
   border: 16px solid #bd00ff;
   filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
   border-radius: 50%;
@@ -245,7 +246,7 @@ body {
   left: 45.28%;
   /* top: 517px; */
   top: 74.9%;
-
+  cursor: pointer;
   border: 16px solid #ffa943;
   filter: drop-shadow(-1px 1px 11px rgba(0, 0, 0, 0.35));
   border-radius: 50%;
@@ -284,10 +285,10 @@ body {
   left: 46.5%;
   /* top: 533px; */
   top: 77.6%;
-  border-radius: 50%;
   cursor: pointer;
   background: #ffffff;
   box-shadow: inset 3px 0px 21px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
 }
 
 #rockimg {
@@ -405,7 +406,7 @@ body {
   opacity: 1; 
    pointer-events: auto; 
  }  */
-@keyframes fadeIn {
+/* @keyframes fadeIn {
   0% {
     opacity: 0;
   }
@@ -421,11 +422,11 @@ body {
 
   100% {
     opacity: 0;
-  }
-}
+  } */
+/* } */
 .match {
   opacity: 0;
-  /* pointer-events: none; */
+  /* pointer-events: inherit; */
 }
 #ypicked {
   position: absolute;
@@ -625,4 +626,138 @@ body {
 
   background: rgba(46, 154, 37, 0.39);
   box-shadow: 10px 11px 162px rgba(0, 0, 0, 0.13);
+}
+#nextButton {
+  box-sizing: border-box;
+
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  left: 986px;
+  /* top: 675px; */
+  top: 90%;
+
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+#nextText {
+  position: absolute;
+  width: 72px;
+  height: 20px;
+  left: 1010px;
+  /* top: 683px; */
+  top: 91.4%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+.next {
+  opacity: 0;
+}
+.ruleBox {
+  position: absolute;
+  top: 35%;
+}
+.rbox {
+  box-sizing: border-box;
+
+  position: relative;
+  width: 278px;
+  height: 325px;
+  left: 964px;
+  /* top: 330px; */
+  /* top: 70%; */
+
+  background: #004429;
+  border: 7px solid #ffffff;
+  border-radius: 13px;
+}
+.rheading {
+  position: absolute;
+  /* width: 130px; */
+  /* height: 27px; */
+  left: 15%;
+  /* top: 5px; */
+  /* top: 1%; */
+  top: 0px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 35px;
+  /* line-height: 30px; */
+
+  color: #ffffff;
+}
+
+ul {
+  width: 211px;
+  height: 27px;
+  /* left: 46px; */
+  top: 80px;
+
+  list-style-type: square;
+
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 15px;
+  /* text-align: center; */
+  color: #ffffff;
+}
+
+.square-bullet {
+  list-style-type: none;
+}
+.square-bullet::before {
+  content: "\25AA";
+  color: yellow;
+  list-style-position: inside;
+  display: inline-block;
+  width: 1em;
+  margin-left: -1em;
+  font-size: 2.5em;
+  vertical-align: middle;
+}
+.cut {
+  position: absolute;
+  width: 45px;
+  height: 45px;
+  /* left: 1217px; */
+  left: 95%;
+  top: 300px;
+  top: 30%;
+  border-radius: 50%;
+  background: #ff0000;
+  border: 5px solid #ffffff;
+}
+.cutText {
+  position: absolute;
+  width: 24px;
+  height: 53px;
+  left: 1230px;
+  /* top: 288px; */
+  top: 28%;
+
+  font-family: "Dangrek";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 44px;
+  line-height: 79px;
+
+  color: #ffffff;
+}
+.wholeRule {
+  opacity: 0;
+}
+.Cut {
+  cursor: pointer;
 }
