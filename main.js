@@ -20,6 +20,7 @@ const ruleText = document.querySelector("#rule-text");
 const Cut = document.querySelector(".Cut");
 const wholeRule = document.querySelector(".wholeRule");
 const rule = document.querySelector(".rule");
+// const next = document.querySelector(".next");
 const game = () => {
   let pScore = 0;
   let cScore = 0;
@@ -78,6 +79,9 @@ const game = () => {
     wholeRule.style.opacity = "0";
     // playMatch();
   });
+  function Hurrah() {
+    location.replace("assets/Hurrah Page/index.html");
+  }
   const compareHands = (playerChoice, computerChoice) => {
     //Update Text
     const decisionText = document.querySelector(".decisionText");
@@ -115,7 +119,9 @@ const game = () => {
         pwinner.style.opacity = "0";
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
-        ruleText.innerHTML = "NEXT";
+        ruleText.innerHTML = "RULES";
+        next.addEventListener("click", rulePopup);
+        rule.addEventListener("click", Hurrah);
         pScore++;
         updateScore();
         return;
@@ -158,6 +164,8 @@ const game = () => {
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
         ruleText.innerHTML = "NEXT";
+        next.addEventListener("click", rulePopup);
+        rule.addEventListener("click", Hurrah);
         pScore++;
         updateScore();
         return;
@@ -187,6 +195,8 @@ const game = () => {
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
         ruleText.innerHTML = "NEXT";
+        next.addEventListener("click", rulePopup);
+        rule.addEventListener("click", Hurrah);
         pScore++;
         updateScore();
         return;

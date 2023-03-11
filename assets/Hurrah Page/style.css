@@ -1,0 +1,142 @@
+body {
+  margin: 0px;
+  padding: 0px;
+  position: relative;
+  width: 100%;
+  height: 100vh;
+
+  background: #89c15e;
+}
+.star {
+  position: absolute;
+  width: 40%;
+  height: 50%;
+  left: 30%;
+  top: 6%;
+}
+.cup {
+  position: absolute;
+  left: 43%;
+  right: 40.83%;
+  top: 22.61%;
+  bottom: 47.15%;
+
+  /* background: #
+  ffd233; */
+}
+.hurray {
+  position: absolute;
+  width: 30%;
+  height: 10%;
+  left: 35%;
+  top: 43%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 500%;
+  line-height: 90%;
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+.won {
+  position: absolute;
+  width: 36%;
+  /* height: 48px; */
+  left: 35%;
+  top: 67%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 225%;
+  line-height: 20%;
+  /* identical to box height */
+
+  text-align: center;
+  letter-spacing: 0.1em;
+
+  color: #ffffff;
+}
+
+.playButton {
+  position: absolute;
+  width: 16%;
+  height: 7%;
+  left: 42%;
+  top: 85%;
+
+  background: #ffffff;
+  border-radius: 9px;
+}
+.playText {
+  position: absolute;
+  width: 8%;
+  height: 4%;
+  left: 46%;
+  top: 87.3%;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 80%;
+  line-height: 113%;
+  letter-spacing: 0.1em;
+
+  color: #6b6b6b;
+}
+#rule-button {
+  /* box-sizing: border-box;
+
+  position: absolute;
+  width: 119px;
+  height: 40px;
+  left: 1136px;
+  top: 675px;
+
+  border: 2px solid #ffffff;
+  border-radius: 10px; */
+  box-sizing: border-box;
+  position: absolute;
+  width: 9%;
+  height: 6.5%;
+  /* left: 1136px; */
+  left: 88%;
+  /* top: 630px; */
+  /* bottom: 80px; */
+  top: 90%;
+  border: 2px solid #ffffff;
+  border-radius: 10px;
+}
+#rule-text {
+  /* position: absolute;
+  width: 72px;
+  height: 20px;
+  left: 1160px;
+  top: 683px;
+
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 25px;
+  letter-spacing: 0.1em;
+
+  color: #ffffff; */
+  position: absolute;
+  width: 7%;
+  height: 4.5;
+  /* left: 1160px; */
+  left: 89.6%;
+  /* top: 638px; */
+  top: 91.4%;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 125%;
+  line-height: 105%;
+  letter-spacing: 0.1em;
+  color: #ffffff;
+}
