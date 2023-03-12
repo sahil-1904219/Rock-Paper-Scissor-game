@@ -19,8 +19,16 @@ const wholeRule = document.querySelector(".wholeRule");
 const rule = document.querySelector(".rule");
 const yscore = document.querySelector(".yscore");
 const cscore = document.querySelector(".cscore");
+const rule1 = document.querySelectorAll(".rule1");
 let pScore = 0;
 let cScore = 0;
+// localStorage.setItem("pscore", pScore.toString());
+// localStorage.setItem("cscore", cScore.toString());
+// let Pscore = parseInt(localStorage.getItem("pscore"));
+// let Cscore = parseInt(localStorage.getItem("cscore"));
+// yscore.textContent = Pscore;
+// cscore.textContent = Cscore;
+let bool = false;
 const game = () => {
   let Pscore = parseInt(localStorage.getItem("pscore"));
   let Cscore = parseInt(localStorage.getItem("cscore"));
@@ -61,14 +69,8 @@ const game = () => {
     cScore = Cscore;
   };
   const updateScore = () => {
-    const yscore = document.querySelector(".yscore");
-    const cscore = document.querySelector(".cscore");
     localStorage.setItem("pscore", pScore.toString());
     localStorage.setItem("cscore", cScore.toString());
-    // const scoreString1 = sessionStorage.getItem("pscore");
-    // const scoreString2 = sessionStorage.getItem("cscore");
-    // const Pscore = parseInt(scoreString1);
-    // const Cscore = parseInt(scoreString2);
     let Pscore = parseInt(localStorage.getItem("pscore"));
     let Cscore = parseInt(localStorage.getItem("cscore"));
     yscore.textContent = Pscore;
@@ -81,10 +83,16 @@ const game = () => {
     next.style.opacity = "0";
     ruleText.innerHTML = "RULES";
     wholeRule.style.opacity = "0";
+    ywinner.style.opacity = "0";
+    bool = false;
   });
 
   function Hurrah() {
-    location.replace("assets/Hurrah Page/index.html");
+    if ((bool = true)) {
+      location.replace("assets/Hurrah Page/index.html");
+    } else {
+      rule.addEventListener("click", rulePopup);
+    }
   }
 
   const compareHands = (playerChoice, computerChoice) => {
@@ -99,13 +107,14 @@ const game = () => {
     if (playerChoice === computerChoice) {
       decisionText.textContent = "TIE UP";
       agains.innerHTML = "";
-      playText.style.left = " 50%";
+      playText.style.left = " 49.5%";
+      decisionText.style.left = "46.3%";
       playText.innerHTML = "REPLAY";
       pwinner.style.opacity = "0";
       ywinner.style.opacity = "0";
       next.style.opacity = "0";
-      next.style.opacity = "0";
       ruleText.innerHTML = "RULES";
+      bool = false;
       rule.addEventListener("click", rulePopup);
       return;
     }
@@ -115,13 +124,15 @@ const game = () => {
     if (playerChoice === "rock") {
       if (computerChoice === "scissor") {
         decisionText.textContent = "YOU WIN";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44.7%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "0";
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
         ruleText.innerHTML = "NEXT";
+        bool = true;
         next.addEventListener("click", rulePopup);
         rule.addEventListener("click", Hurrah);
         getscore();
@@ -130,13 +141,15 @@ const game = () => {
         return;
       } else {
         decisionText.textContent = "YOU LOST";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "1";
         ywinner.style.opacity = "0";
         next.style.opacity = "0";
         ruleText.innerHTML = "RULES";
+        bool = false;
         rule.addEventListener("click", rulePopup);
         getscore();
         cScore++;
@@ -150,13 +163,15 @@ const game = () => {
     if (playerChoice === "paper") {
       if (computerChoice === "scissor") {
         decisionText.textContent = "YOU LOST";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "1";
         ywinner.style.opacity = "0";
         next.style.opacity = "0";
         ruleText.innerHTML = "RULES";
+        bool = false;
         rule.addEventListener("click", rulePopup);
         getscore();
         cScore++;
@@ -164,13 +179,15 @@ const game = () => {
         return;
       } else {
         decisionText.textContent = "YOU WIN";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44.7%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "0";
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
         ruleText.innerHTML = "NEXT";
+        bool = true;
         next.addEventListener("click", rulePopup);
         rule.addEventListener("click", Hurrah);
         getscore();
@@ -185,13 +202,15 @@ const game = () => {
     if (playerChoice === "scissor") {
       if (computerChoice === "rock") {
         decisionText.textContent = "YOU LOST";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "1";
         ywinner.style.opacity = "0";
         next.style.opacity = "0";
         ruleText.innerHTML = "RULES";
+        bool = false;
         rule.addEventListener("click", rulePopup);
         getscore();
         cScore++;
@@ -199,13 +218,15 @@ const game = () => {
         return;
       } else {
         decisionText.textContent = "YOU WIN";
-        playText.style.left = " 48.7%";
+        decisionText.style.left = "44.7%";
+        playText.style.left = " 47.8%";
         playText.innerHTML = "PLAY AGAIN";
         agains.innerHTML = "AGAINST PC";
         pwinner.style.opacity = "0";
         ywinner.style.opacity = "1";
         next.style.opacity = "1";
         ruleText.innerHTML = "NEXT";
+        bool = true;
         next.addEventListener("click", rulePopup);
         rule.addEventListener("click", Hurrah);
         getscore();

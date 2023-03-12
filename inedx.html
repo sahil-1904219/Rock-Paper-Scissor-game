@@ -10,6 +10,7 @@
   </head>
   <body>
     <div class="fullbody">
+      <span class="ywinner"></span>
       <div class="rectangle1"></div>
       <label id="ROCK">ROCK</label>
       <label id="PAPERR">PAPER</label>
@@ -60,7 +61,8 @@
         <div class="match">
           <div class="leftSide">
             <label id="ypicked">YOU PICKED</label>
-            <span class="ywinner"></span>
+            <!-- <span class="ywinner"></span> -->
+
             <span class="outerCircle1"></span>
             <span class="innerCircle1"></span>
             <img class="yourImage" src="" alt="image" />
@@ -82,47 +84,49 @@
           </div>
         </div>
       </div>
+      <!-- <div class="rule1"> -->
       <div class="rule">
         <span id="rule-button"></span>
         <span id="rule-text">RULES</span>
       </div>
-      <div class="next">
-        <span id="nextButton"></span>
-        <span id="nextText">RULES</span>
+    </div>
+    <div class="next">
+      <span id="nextButton"></span>
+      <span id="nextText">RULES</span>
+    </div>
+    <div class="wholeRule">
+      <div class="ruleBox">
+        <div class="rbox">
+          <p class="rheading">Game Rules</p>
+          <ul>
+            <li class="square-bullet">
+              Rock beats scissors, scissors beat paper, and paper beats rock.
+            </li>
+            <br />
+            <li class="square-bullet">
+              Agree ahead of time whether you’ll count off “rock, paper,
+              scissors, shoot” or just “rock, paper, scissors.
+            </li>
+            <br />
+            <li class="square-bullet">
+              Use rock, paper, scissors to settle minor decisions or simply play
+              to pass the time
+            </li>
+            <br />
+            <li class="square-bullet">
+              If both players lay down the same hand, each player lays down
+              another hand
+            </li>
+            <br />
+          </ul>
+        </div>
       </div>
-      <div class="wholeRule">
-        <div class="ruleBox">
-          <div class="rbox">
-            <p class="rheading">Game Rules</p>
-            <ul>
-              <li class="square-bullet">
-                Rock beats scissors, scissors beat paper, and paper beats rock.
-              </li>
-              <br />
-              <li class="square-bullet">
-                Agree ahead of time whether you’ll count off “rock, paper,
-                scissors, shoot” or just “rock, paper, scissors.
-              </li>
-              <br />
-              <li class="square-bullet">
-                Use rock, paper, scissors to settle minor decisions or simply
-                play to pass the time
-              </li>
-              <br />
-              <li class="square-bullet">
-                If both players lay down the same hand, each player lays down
-                another hand
-              </li>
-              <br />
-            </ul>
-          </div>
-        </div>
-        <div class="Cut">
-          <span class="cut"></span>
-          <span class="cutText">x</span>
-        </div>
+      <div class="Cut">
+        <span class="cut"></span>
+        <span class="cutText">x</span>
       </div>
     </div>
+    <!-- </div> -->
     <script src="main.js"></script>
   </body>
 </html>
