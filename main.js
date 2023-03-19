@@ -22,46 +22,22 @@ const cscore = document.querySelector(".cscore");
 const rule1 = document.querySelectorAll(".rule1");
 let pScore = 0;
 let cScore = 0;
-// let sw = 0;
-// let dw = 0;
-// localStorage.setItem("pscore", dw.toString());
-// localStorage.setItem("cscore", sw.toString());
 let bool = false;
 const game = () => {
-  // const getscore = () => {
-  //   let Pscore = parseInt(localStorage.getItem("pscore"));
-  //   let Cscore = parseInt(localStorage.getItem("cscore"));
-  //   pScore = Pscore;
-  //   cScore = Cscore;
-  // };
-  // getscore();
   let Pscore = parseInt(localStorage.getItem("pscore"));
   let Cscore = parseInt(localStorage.getItem("cscore"));
   if (isNaN(Pscore) && isNaN(Cscore)) {
     localStorage.setItem("pscore", pScore.toString());
     localStorage.setItem("cscore", cScore.toString());
   }
-  // localStorage.setItem("pscore", pScore.toString());
-  // localStorage.setItem("cscore", cScore.toString());
-
-  // if (Pscore == NaN && Cscore == NaN) {
-  //   localStorage.setItem("pscore", pScore.toString());
-  //   localStorage.setItem("cscore", cScore.toString());
-  //   yscore.textContent = pScore;
-  //   cscore.textContent = cScore;
-  // }
   Pscore = parseInt(localStorage.getItem("pscore"));
   Cscore = parseInt(localStorage.getItem("cscore"));
   yscore.textContent = Pscore;
   cscore.textContent = Cscore;
-  // yscore.textContent = pScore;
-  // cscore.textContent = cScore;
   bool = false;
-
   const rulePopup = () => {
     wholeRule.style.opacity = "1";
   };
-
   function Hurrah() {
     if ((bool = true)) {
       location.replace("assets/Hurrah Page/index.html");
