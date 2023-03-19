@@ -22,21 +22,28 @@ const cscore = document.querySelector(".cscore");
 const rule1 = document.querySelectorAll(".rule1");
 let pScore = 0;
 let cScore = 0;
-// localStorage.setItem("pscore", pScore.toString());
-// localStorage.setItem("cscore", cScore.toString());
-// let Pscore = parseInt(localStorage.getItem("pscore"));
-// let Cscore = parseInt(localStorage.getItem("cscore"));
-// yscore.textContent = Pscore;
-// cscore.textContent = Cscore;
+localStorage.setItem("pscore", pScore.toString());
+localStorage.setItem("cscore", cScore.toString());
 let bool = false;
 const game = () => {
   let Pscore = parseInt(localStorage.getItem("pscore"));
   let Cscore = parseInt(localStorage.getItem("cscore"));
   yscore.textContent = Pscore;
   cscore.textContent = Cscore;
+  bool = false;
+
   const rulePopup = () => {
     wholeRule.style.opacity = "1";
   };
+
+  function Hurrah() {
+    if ((bool = true)) {
+      location.replace("assets/Hurrah Page/index.html");
+      bool = false;
+    } else {
+      rule.addEventListener("click", rulePopup);
+    }
+  }
   rule.addEventListener("click", rulePopup);
   const computerOptions = ["rock", "paper", "scissor"];
   const computerColors = [" #0074B6", "#FFA943", "rgba(189, 0, 255, 1)"];
@@ -52,6 +59,7 @@ const game = () => {
         chooseOptio.style.opacity = "0";
         matche.style.opacity = "1";
         wholeRule.style.opacity = "0";
+        bool = false;
         compareHands(this.id, computerChoice);
       });
     });
@@ -86,14 +94,6 @@ const game = () => {
     ywinner.style.opacity = "0";
     bool = false;
   });
-
-  function Hurrah() {
-    if ((bool = true)) {
-      location.replace("assets/Hurrah Page/index.html");
-    } else {
-      rule.addEventListener("click", rulePopup);
-    }
-  }
 
   const compareHands = (playerChoice, computerChoice) => {
     const decisionText = document.querySelector(".decisionText");
@@ -235,6 +235,7 @@ const game = () => {
         return;
       }
     }
+    bool = false;
   };
 
   playMatch();

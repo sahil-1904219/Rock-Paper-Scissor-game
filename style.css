@@ -442,10 +442,8 @@ body {
 .ywinner {
   position: absolute;
   left: 17.5%;
-  /* top: 310px; */
   width: 350px;
   height: 350px;
-  /* left: 59.3%; */
   opacity: 0;
   top: 39%;
   border-radius: 50%;
@@ -456,11 +454,8 @@ body {
   position: absolute;
   width: 20%px;
   height: 6%px;
-  /* left: 550px; */
   left: 44%;
   top: 61%;
-  /* top: 454px; */
-
   font-family: "Roboto";
   font-style: normal;
   font-weight: 600;
