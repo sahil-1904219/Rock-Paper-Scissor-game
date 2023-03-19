@@ -4,7 +4,7 @@ const wholeRule = document.querySelector(".wholeRule");
 const rule1 = document.querySelector(".rule1");
 function mainpage() {
   wholeRule.style.opacity = "0";
-  location.replace("../../inedx.html");
+  location.replace("../../index.html");
 }
 const cutRule = () => {
   wholeRule.style.opacity = "0";
